@@ -12520,7 +12520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05dd66fba755fea488f8842d67e38cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
+  theatrePanel: {fileID: 229922252}
   playlistElements: []
   videoPlayer: {fileID: 252246432}
   PlayPauseButton: {fileID: 1899937028}

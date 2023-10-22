@@ -12,6 +12,8 @@ public class CinemaVideoPlayer : MonoBehaviour
     [SerializeField] private GameObject[] playlistElements; 
     public VideoPlayer videoPlayer;
 
+  public   bool IsPlayin { get; set;  }
+
     public PlayPauseButtonBehaviour PlayPauseButton;
     private GameObject progress;
     private Image fillBar;
@@ -55,7 +57,9 @@ public class CinemaVideoPlayer : MonoBehaviour
         FrameCheck(); 
     }
 
-
+    /// <summary>
+    ///  CODE REVIEW CALLING METHOD IN UPDATE CLARIFIED! 
+    /// </summary>
     public void FrameCheck()
     {
         if (videoPlayer.frameCount > 0)
@@ -71,11 +75,6 @@ public class CinemaVideoPlayer : MonoBehaviour
             }
         }
     }    
-
-
-
-
-
 
     /// <summary>
     /// stolen from PanelOpener Script  
@@ -96,4 +95,7 @@ public class CinemaVideoPlayer : MonoBehaviour
             }
         }
     }
+
+
+
 }
