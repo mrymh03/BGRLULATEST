@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 /// <summary>
 ///  Handles play pause button behavior and communicates with CVP 
 /// </summary>
-public class PlayPauseButtonBehaviour :  IPointerEnterHandler, IPointerExitHandler
+public class PlayPauseButtonBehaviour : MonoBehaviour ,IPointerEnterHandler, IPointerExitHandler
 {
     public Sprite PlaySprite, PlayHoverSprite, PauseSprite, PauseHoverSprite;
     public Button PPButton;
     public bool videoPaused = false;
-    CinemaVideoPlayer cinemaVideoPlayer; 
+    public CinemaVideoPlayer cinemaVideoPlayer; 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (cinemaVideoPlayer.videoPlayer.isPlaying)
