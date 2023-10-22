@@ -353,8 +353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &931772
 MonoBehaviour:
@@ -691,8 +692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &26490420
 MonoBehaviour:
@@ -2366,9 +2368,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
-  Panel: {fileID: 0}
-  PlayPauseButton: {fileID: 0}
+  theatrePanel: {fileID: 229922252}
+  playlistElements:
+  - {fileID: 767106106}
+  - {fileID: 1835597676}
+  - {fileID: 1768799031}
+  - {fileID: 1912200017}
+  - {fileID: 2047172920}
+  - {fileID: 731372000}
+  - {fileID: 1079303774}
+  - {fileID: 2038084145}
+  - {fileID: 1082669088}
+  - {fileID: 1954776405}
+  - {fileID: 570074047}
+  - {fileID: 1364301570}
+  - {fileID: 214813362}
+  - {fileID: 1444295764}
+  videoPlayer: {fileID: 252246432}
+  PlayPauseButton: {fileID: 1899937028}
 --- !u!1 &294243686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,8 +2946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 0}
 --- !u!1 &433317102
 GameObject:
@@ -3490,8 +3508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &474399665
 MonoBehaviour:
@@ -4934,8 +4953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &744645270
 MonoBehaviour:
@@ -5317,8 +5337,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &764505052
 MonoBehaviour:
@@ -5892,8 +5913,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &834434292
 MonoBehaviour:
@@ -6034,7 +6056,6 @@ GameObject:
   - component: {fileID: 878713605}
   - component: {fileID: 878713604}
   - component: {fileID: 878713603}
-  - component: {fileID: 878713606}
   - component: {fileID: 878713607}
   m_Layer: 5
   m_Name: Button1
@@ -6110,19 +6131,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 878713607}
-        m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
-        m_MethodName: OpenPanel
-        m_Mode: 1
+      - m_Target: {fileID: 285414045}
+        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
+        m_MethodName: SendMessage
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Barbie Girls Rewritten Channel Trailer.mp4
           m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 878713606}
+        m_CallState: 2
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -6133,7 +6154,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Barbie Girls Rewritten Channel Trailer.mp4
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &878713604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6172,21 +6193,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878713601}
   m_CullTransparentMesh: 1
---- !u!114 &878713606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878713601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
-  PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &878713607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6443,8 +6449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &927137684
 MonoBehaviour:
@@ -7966,8 +7973,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &1086843505
 MonoBehaviour:
@@ -8220,8 +8228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &1133816572
 MonoBehaviour:
@@ -9485,8 +9494,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &1413665973
 MonoBehaviour:
@@ -10770,8 +10780,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &1619191238
 MonoBehaviour:
@@ -12509,8 +12520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05dd66fba755fea488f8842d67e38cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
   PlaySprite: {fileID: 21300000, guid: 72ed1a57005f7de4e90a09aeb8c078f9, type: 3}
   PlayHoverSprite: {fileID: 21300000, guid: ea986bcbebec4f245bbbada9576331a8, type: 3}
@@ -13067,8 +13079,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &1946501504
 MonoBehaviour:
@@ -14326,8 +14339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theatrePanel: {fileID: 0}
+  playlistElements: []
   videoPlayer: {fileID: 252246432}
-  Panel: {fileID: 229922252}
   PlayPauseButton: {fileID: 1899937028}
 --- !u!114 &2124234316
 MonoBehaviour:

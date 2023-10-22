@@ -2,17 +2,25 @@ using System;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
-
+/// <summary>
+/// Lula:  handles video events once clicked  as well as theater management 
+/// </summary>
 public class CinemaVideoPlayer : MonoBehaviour
 {
+    [Header(" CinemaVideoPlayer Configurartions")]
+    [SerializeField] private GameObject theatrePanel;
+    [SerializeField] private GameObject[] playlistElements; 
     public VideoPlayer videoPlayer;
-    public GameObject Panel;
+
     public PlayPauseButtonBehaviour PlayPauseButton;
     private GameObject progress;
     private Image fillBar;
     private Animator animator;
 
-
+    /// <summary>
+    ///  retrieves string from video and plays 
+    /// </summary>
+    /// <param name="videoTitle"></param>
     public void SelectVideo(string videoTitle)
     { 
         string fileSource = "file://Assets/cinema_videos/" + videoTitle;
@@ -20,12 +28,16 @@ public class CinemaVideoPlayer : MonoBehaviour
         videoPlayer.source = VideoSource.Url;
         videoPlayer.Play();
     }
-
+    /// <summary>
+    /// stops the video 
+    /// </summary>
     public void StopVideo()
     {
         videoPlayer.Stop();
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
     private void Start()
     {
         if (videoPlayer.url != null)
@@ -35,6 +47,9 @@ public class CinemaVideoPlayer : MonoBehaviour
             fillBar = progress.GetComponent<Image>();
         }
     }
+    /// <summary>
+    /// 
+    /// </summary>
     private void Update()
     {
         if (videoPlayer.frameCount > 0)
@@ -51,12 +66,25 @@ public class CinemaVideoPlayer : MonoBehaviour
         }
     }
 
-    //stolen from PanelOpener Script
+
+    public void FrameCheck()
+    {
+
+    }    
+
+
+
+
+
+
+    /// <summary>
+    /// stolen from PanelOpener Script  
+    /// </summary>
     public void ClosePanel()
     {
-        if (Panel != null)
+        if (theatrePanel != null)
         {
-            animator = Panel.GetComponent<Animator>();
+            animator = theatrePanel.GetComponent<Animator>();
 
             if (animator != null)
             {
