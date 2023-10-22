@@ -48,9 +48,15 @@ public class CinemaVideoPlayer : MonoBehaviour
         }
     }
     /// <summary>
-    /// 
+    ///  FrameCheck running Update 
     /// </summary>
     private void Update()
+    {
+        FrameCheck(); 
+    }
+
+
+    public void FrameCheck()
     {
         if (videoPlayer.frameCount > 0)
         {
@@ -64,12 +70,6 @@ public class CinemaVideoPlayer : MonoBehaviour
                 ClosePanel();
             }
         }
-    }
-
-
-    public void FrameCheck()
-    {
-
     }    
 
 
