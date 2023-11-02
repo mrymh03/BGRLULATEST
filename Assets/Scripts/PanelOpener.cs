@@ -5,10 +5,12 @@ using UnityEngine;
 public class PanelOpener : MonoBehaviour
 {
     public GameObject Pnl;
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
-    // If there is a panel, animate it as shown in the animator menu
-     public void OpenPanel()
+    /// <summary>
+    /// If there is a panel, animate it as shown in the animator menu
+    /// </summary>
+    public void OpenPanel()
     {
         if (Pnl != null)
         {
@@ -22,9 +24,21 @@ public class PanelOpener : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Escape running update
+    /// </summary>
     public void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        Escape();
+    }
+
+    /// <summary>
+    /// checks to see if escape key has been hit while the playlist panel is open so that it can close the panel.
+    /// Code moved here from Update()
+    /// </summary>
+    private void Escape()
+    {
+        if (Input.GetButtonDown("Cancel") && Pnl.name == "PlaylistPanel")
         {
             animator = Pnl.GetComponent<Animator>();
             if (animator.GetBool("Open"))
