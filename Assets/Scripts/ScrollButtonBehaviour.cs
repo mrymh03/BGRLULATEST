@@ -7,6 +7,9 @@ public class ScrollButtonBehaviour: MonoBehaviour
 {
     public Scrollbar bar;
 
+    /// <summary>
+    /// Controls actions of the scroll buttons above and below the scroll bar of the playlist panel
+    /// </summary>
     public void ScrollButtonUp()
     {
         float value = (float)bar.value;

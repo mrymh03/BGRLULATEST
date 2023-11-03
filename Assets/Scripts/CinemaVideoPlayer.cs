@@ -7,12 +7,12 @@ using UnityEngine.UI;
 /// </summary>
 public class CinemaVideoPlayer : MonoBehaviour
 {
-    [Header(" CinemaVideoPlayer Configurartions")]
+    [Header(" CinemaVideoPlayer Configurations")]
     [SerializeField] private GameObject theatrePanel;
     [SerializeField] private GameObject[] playlistElements; 
     public VideoPlayer videoPlayer;
 
-  public   bool IsPlayin { get; set;  }
+    public   bool IsPlayin { get; set;  }
 
     public PlayPauseButtonBehaviour PlayPauseButton;
     private GameObject progress;
@@ -20,7 +20,7 @@ public class CinemaVideoPlayer : MonoBehaviour
     private Animator animator;
 
     /// <summary>
-    ///  retrieves string from video and plays 
+    ///  retrieves title of video from string and plays it
     /// </summary>
     /// <param name="videoTitle"></param>
     public void SelectVideo(string videoTitle)
@@ -38,7 +38,7 @@ public class CinemaVideoPlayer : MonoBehaviour
         videoPlayer.Stop();
     }
     /// <summary>
-    /// 
+    /// Function that begins the filling of the progress bar when the video is started
     /// </summary>
     private void Start()
     {
@@ -58,7 +58,8 @@ public class CinemaVideoPlayer : MonoBehaviour
     }
 
     /// <summary>
-    ///  CODE REVIEW CALLING METHOD IN UPDATE CLARIFIED! 
+    ///  Updates amount progress bar is filled in accordance with the progress of the video 
+    ///  Used to be in Update()
     /// </summary>
     public void FrameCheck()
     {

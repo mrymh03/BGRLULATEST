@@ -203,8 +203,6 @@ GameObject:
   - component: {fileID: 931770}
   - component: {fileID: 931769}
   - component: {fileID: 931768}
-  - component: {fileID: 931772}
-  - component: {fileID: 931771}
   m_Layer: 5
   m_Name: Button6
   m_TagString: Untagged
@@ -279,7 +277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 931772}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -291,7 +289,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 931771}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -341,35 +339,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931766}
   m_CullTransparentMesh: 1
---- !u!114 &931771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &931772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &19487479
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,8 +511,6 @@ GameObject:
   - component: {fileID: 26490418}
   - component: {fileID: 26490417}
   - component: {fileID: 26490416}
-  - component: {fileID: 26490420}
-  - component: {fileID: 26490419}
   m_Layer: 5
   m_Name: Button4
   m_TagString: Untagged
@@ -618,7 +585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 26490420}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -630,7 +597,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 26490419}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -680,35 +647,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26490414}
   m_CullTransparentMesh: 1
---- !u!114 &26490419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26490414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &26490420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26490414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &34676292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2180,7 @@ Transform:
   m_Children:
   - {fileID: 285414044}
   - {fileID: 1283686806}
+  - {fileID: 369214628}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2951,6 +2890,51 @@ MonoBehaviour:
   playlistElements: []
   videoPlayer: {fileID: 252246432}
   PlayPauseButton: {fileID: 0}
+--- !u!1 &369214627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369214628}
+  - component: {fileID: 369214629}
+  m_Layer: 0
+  m_Name: PanelLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &369214628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369214627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 277825819}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &369214629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369214627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pnl: {fileID: 229922252}
 --- !u!1 &433317102
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,7 +3064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -954.5856}
+  m_AnchoredPosition: {x: 0, y: -954.5858}
   m_SizeDelta: {x: 1364, y: 2916.4343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443930249
@@ -3359,8 +3343,6 @@ GameObject:
   - component: {fileID: 474399663}
   - component: {fileID: 474399662}
   - component: {fileID: 474399661}
-  - component: {fileID: 474399665}
-  - component: {fileID: 474399664}
   m_Layer: 5
   m_Name: Button13
   m_TagString: Untagged
@@ -3435,7 +3417,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474399665}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -3447,7 +3429,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 474399664}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -3497,35 +3479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474399659}
   m_CullTransparentMesh: 1
---- !u!114 &474399664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474399659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &474399665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474399659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &521427530
 GameObject:
   m_ObjectHideFlags: 0
@@ -4803,8 +4756,6 @@ GameObject:
   - component: {fileID: 744645268}
   - component: {fileID: 744645267}
   - component: {fileID: 744645266}
-  - component: {fileID: 744645270}
-  - component: {fileID: 744645269}
   m_Layer: 5
   m_Name: Button7
   m_TagString: Untagged
@@ -4879,7 +4830,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 744645270}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -4891,7 +4842,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 744645269}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -4942,35 +4893,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744645264}
   m_CullTransparentMesh: 1
---- !u!114 &744645269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744645264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &744645270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744645264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &757023094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,8 +5110,6 @@ GameObject:
   - component: {fileID: 764505050}
   - component: {fileID: 764505049}
   - component: {fileID: 764505048}
-  - component: {fileID: 764505052}
-  - component: {fileID: 764505051}
   m_Layer: 5
   m_Name: Button9
   m_TagString: Untagged
@@ -5264,7 +5184,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 764505052}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -5276,7 +5196,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 764505051}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -5326,35 +5246,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764505046}
   m_CullTransparentMesh: 1
---- !u!114 &764505051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764505046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &764505052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764505046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &767106106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5764,8 +5655,6 @@ GameObject:
   - component: {fileID: 834434290}
   - component: {fileID: 834434289}
   - component: {fileID: 834434288}
-  - component: {fileID: 834434292}
-  - component: {fileID: 834434291}
   m_Layer: 5
   m_Name: Button14
   m_TagString: Untagged
@@ -5840,7 +5729,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 834434292}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -5852,7 +5741,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 834434291}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -5902,35 +5791,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834434286}
   m_CullTransparentMesh: 1
---- !u!114 &834434291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834434286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &834434292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834434286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &851449624
 GameObject:
   m_ObjectHideFlags: 0
@@ -6057,7 +5917,6 @@ GameObject:
   - component: {fileID: 878713605}
   - component: {fileID: 878713604}
   - component: {fileID: 878713603}
-  - component: {fileID: 878713607}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -6133,8 +5992,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 285414045}
-        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
-        m_MethodName: SendMessage
+        m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
+        m_MethodName: SelectVideo
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6144,10 +6003,10 @@ MonoBehaviour:
           m_StringArgument: Barbie Girls Rewritten Channel Trailer.mp4
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 285414045}
-        m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
-        m_MethodName: SelectVideo
-        m_Mode: 5
+      - m_Target: {fileID: 369214629}
+        m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6194,19 +6053,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878713601}
   m_CullTransparentMesh: 1
---- !u!114 &878713607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878713601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &912174817
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,8 +6145,6 @@ GameObject:
   - component: {fileID: 927137682}
   - component: {fileID: 927137681}
   - component: {fileID: 927137680}
-  - component: {fileID: 927137684}
-  - component: {fileID: 927137683}
   m_Layer: 5
   m_Name: Button11
   m_TagString: Untagged
@@ -6375,7 +6219,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 927137684}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -6387,7 +6231,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 927137683}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -6438,35 +6282,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927137678}
   m_CullTransparentMesh: 1
---- !u!114 &927137683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927137678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &927137684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927137678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &929591533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,8 +7639,6 @@ GameObject:
   - component: {fileID: 1086843503}
   - component: {fileID: 1086843502}
   - component: {fileID: 1086843501}
-  - component: {fileID: 1086843505}
-  - component: {fileID: 1086843504}
   m_Layer: 5
   m_Name: Button10
   m_TagString: Untagged
@@ -7900,7 +7713,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1086843505}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -7912,7 +7725,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1086843504}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -7962,35 +7775,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086843499}
   m_CullTransparentMesh: 1
---- !u!114 &1086843504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086843499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &1086843505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086843499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &1098496807
 GameObject:
   m_ObjectHideFlags: 0
@@ -8079,8 +7863,6 @@ GameObject:
   - component: {fileID: 1133816570}
   - component: {fileID: 1133816569}
   - component: {fileID: 1133816568}
-  - component: {fileID: 1133816572}
-  - component: {fileID: 1133816571}
   m_Layer: 5
   m_Name: Button12
   m_TagString: Untagged
@@ -8155,7 +7937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1133816572}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -8167,7 +7949,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1133816571}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -8217,35 +7999,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133816566}
   m_CullTransparentMesh: 1
---- !u!114 &1133816571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133816566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &1133816572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133816566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &1145761905
 GameObject:
   m_ObjectHideFlags: 0
@@ -9388,8 +9141,6 @@ GameObject:
   - component: {fileID: 1413665971}
   - component: {fileID: 1413665970}
   - component: {fileID: 1413665969}
-  - component: {fileID: 1413665972}
-  - component: {fileID: 1413665973}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -9464,7 +9215,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1413665972}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -9477,7 +9228,7 @@ MonoBehaviour:
             parts pt 1_risa mi.mp4
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1413665973}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -9527,35 +9278,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413665967}
   m_CullTransparentMesh: 1
---- !u!114 &1413665972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413665967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &1413665973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413665967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &1431293680
 GameObject:
   m_ObjectHideFlags: 0
@@ -10674,8 +10396,6 @@ GameObject:
   - component: {fileID: 1619191236}
   - component: {fileID: 1619191235}
   - component: {fileID: 1619191234}
-  - component: {fileID: 1619191238}
-  - component: {fileID: 1619191237}
   m_Layer: 5
   m_Name: Button5
   m_TagString: Untagged
@@ -10750,7 +10470,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1619191238}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -10762,7 +10482,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1619191237}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -10813,35 +10533,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619191232}
   m_CullTransparentMesh: 1
---- !u!114 &1619191237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619191232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &1619191238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619191232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &1625807904
 GameObject:
   m_ObjectHideFlags: 0
@@ -11700,7 +11391,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1954377464}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.17268719
+  m_Size: 0.34537455
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12971,8 +12662,6 @@ GameObject:
   - component: {fileID: 1946501502}
   - component: {fileID: 1946501501}
   - component: {fileID: 1946501500}
-  - component: {fileID: 1946501504}
-  - component: {fileID: 1946501503}
   m_Layer: 5
   m_Name: Button8
   m_TagString: Untagged
@@ -13047,7 +12736,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1946501504}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -13059,7 +12748,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1946501503}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -13109,35 +12798,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946501498}
   m_CullTransparentMesh: 1
---- !u!114 &1946501503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946501498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &1946501504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946501498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
 --- !u!1 &1954377463
 GameObject:
   m_ObjectHideFlags: 0
@@ -14231,8 +13891,6 @@ GameObject:
   - component: {fileID: 2124234314}
   - component: {fileID: 2124234313}
   - component: {fileID: 2124234312}
-  - component: {fileID: 2124234316}
-  - component: {fileID: 2124234315}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -14307,7 +13965,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124234316}
+      - m_Target: {fileID: 369214629}
         m_TargetAssemblyTypeName: PanelOpener, Assembly-CSharp
         m_MethodName: OpenPanel
         m_Mode: 1
@@ -14319,7 +13977,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2124234315}
+      - m_Target: {fileID: 285414045}
         m_TargetAssemblyTypeName: CinemaVideoPlayer, Assembly-CSharp
         m_MethodName: SelectVideo
         m_Mode: 5
@@ -14369,32 +14027,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124234310}
   m_CullTransparentMesh: 1
---- !u!114 &2124234315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124234310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07990adf9e4c5494e9936ab1631217d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theatrePanel: {fileID: 0}
-  playlistElements: []
-  videoPlayer: {fileID: 252246432}
-  PlayPauseButton: {fileID: 0}
---- !u!114 &2124234316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124234310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390323eb1089cd4ab0233483e28fa7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pnl: {fileID: 229922252}
