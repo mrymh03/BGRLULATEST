@@ -25,12 +25,8 @@ public class CinemaVideoPlayer : MonoBehaviour
     /// <param name="videoTitle"></param>
     public void SelectVideo(string videoTitle)
     {
-        //string fileSource = "file://Assets/cinema_videos/" + videoTitle;
         string fileSource = System.IO.Path.Combine(Application.streamingAssetsPath, videoTitle);
-        Debug.Log("file is filed");
         videoPlayer.url = fileSource;
-        Debug.Log("source is sourced");
-        //videoPlayer.source = VideoSource.Url;
         videoPlayer.Play();
     }
     /// <summary>
