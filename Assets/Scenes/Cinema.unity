@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2832904f17975104c81a3b4d9738532e, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1023,6 +1023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 851449624}
+  animator: {fileID: 0}
 --- !u!114 &52973834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,6 +2769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 229922252}
+  animator: {fileID: 0}
 --- !u!114 &342650929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2935,6 +2937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 229922252}
+  animator: {fileID: 0}
 --- !u!1 &433317102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,6 +5849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 851449624}
+  animator: {fileID: 0}
 --- !u!114 &851449627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8281,6 +8285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 851449624}
+  animator: {fileID: 0}
 --- !u!114 &1175365060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10089,6 +10094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 1479848649}
+  animator: {fileID: 0}
 --- !u!1 &1509928058
 GameObject:
   m_ObjectHideFlags: 0
@@ -13631,6 +13637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pnl: {fileID: 851449624}
+  animator: {fileID: 0}
 --- !u!114 &2038309361
 MonoBehaviour:
   m_ObjectHideFlags: 0

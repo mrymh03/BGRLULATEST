@@ -9,7 +9,7 @@ public class CinemaVideoPlayer : MonoBehaviour
 {
     [Header(" CinemaVideoPlayer Configurations")]
     [SerializeField] private GameObject theatrePanel;
-    [SerializeField] private GameObject[] playlistElements; 
+    [SerializeField] private GameObject[] playlistElements;
     public VideoPlayer videoPlayer;
 
     public   bool IsPlayin { get; set;  }
@@ -24,10 +24,13 @@ public class CinemaVideoPlayer : MonoBehaviour
     /// </summary>
     /// <param name="videoTitle"></param>
     public void SelectVideo(string videoTitle)
-    { 
-        string fileSource = "file://Assets/cinema_videos/" + videoTitle;
+    {
+        //string fileSource = "file://Assets/cinema_videos/" + videoTitle;
+        string fileSource = System.IO.Path.Combine(Application.streamingAssetsPath, videoTitle);
+        Debug.Log("file is filed");
         videoPlayer.url = fileSource;
-        videoPlayer.source = VideoSource.Url;
+        Debug.Log("source is sourced");
+        //videoPlayer.source = VideoSource.Url;
         videoPlayer.Play();
     }
     /// <summary>
