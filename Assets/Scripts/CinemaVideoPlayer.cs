@@ -58,6 +58,7 @@ public class CinemaVideoPlayer : MonoBehaviour
 
     /// <summary>
     ///  Updates amount progress bar is filled in accordance with the progress of the video 
+    ///  Closes TheatrePanel when video ends
     ///  Used to be in Update()
     /// </summary>
     public void FrameCheck()
@@ -69,7 +70,7 @@ public class CinemaVideoPlayer : MonoBehaviour
             long playerCurrentFrame = videoPlayer.frame;
             long playerFrameCount = Convert.ToInt64(videoPlayer.frameCount);
 
-            if (!videoPlayer.isPlaying && videoPlayer.frame > 0 && !PlayPauseButton.videoPaused && Application.isFocused)
+            if (!videoPlayer.isPlaying && (float)videoPlayer.frame >= (float)videoPlayer.frameCount-1 && !PlayPauseButton.videoPaused)
             {
                 ClosePanel();
             }
