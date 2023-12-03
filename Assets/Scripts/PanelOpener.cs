@@ -28,8 +28,8 @@ public class PanelOpener : MonoBehaviour
     /// Escape running update
     /// </summary>
     public void Update()
-    {
-        Escape();
+    {        
+         Escape();
     }
 
     /// <summary>

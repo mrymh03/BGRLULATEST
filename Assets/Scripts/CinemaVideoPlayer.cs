@@ -69,7 +69,7 @@ public class CinemaVideoPlayer : MonoBehaviour
             long playerCurrentFrame = videoPlayer.frame;
             long playerFrameCount = Convert.ToInt64(videoPlayer.frameCount);
 
-            if (!videoPlayer.isPlaying && videoPlayer.frame > 0 && !PlayPauseButton.videoPaused)
+            if (!videoPlayer.isPlaying && videoPlayer.frame > 0 && !PlayPauseButton.videoPaused && Application.isFocused)
             {
                 ClosePanel();
             }
@@ -81,17 +81,14 @@ public class CinemaVideoPlayer : MonoBehaviour
     /// </summary>
     public void ClosePanel()
     {
-        if (theatrePanel != null)
-        {
-            animator = theatrePanel.GetComponent<Animator>();
+        animator = theatrePanel.GetComponent<Animator>();
 
-            if (animator != null)
+        if (animator != null)
+        {
+            bool isOpen = animator.GetBool("Open");
+            if (isOpen == true)
             {
-                bool isOpen = animator.GetBool("Open");
-                if (isOpen == true)
-                {
-                    animator.SetBool("Open", !isOpen);
-                }
+                animator.SetBool("Open", !isOpen);
             }
         }
     }
