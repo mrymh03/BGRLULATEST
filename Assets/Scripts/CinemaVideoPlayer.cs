@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
@@ -12,12 +14,19 @@ public class CinemaVideoPlayer : MonoBehaviour
     [SerializeField] private GameObject[] playlistElements;
     public VideoPlayer videoPlayer;
 
-    public   bool IsPlayin { get; set;  }
+    public bool IsPlayin { get; set; }
 
     public PlayPauseButtonBehaviour PlayPauseButton;
     private GameObject progress;
     private Image fillBar;
     private Animator animator;
+
+
+    IEnumerator waiter()
+    {
+        System.Func<bool> preparedBool = new System.Func<bool>(() => videoPlayer.isPrepared);
+        yield return new WaitUntil(preparedBool); 
+    }
 
     /// <summary>
     ///  retrieves title of video from string and plays it
@@ -27,6 +36,8 @@ public class CinemaVideoPlayer : MonoBehaviour
     {
         string fileSource = System.IO.Path.Combine(Application.streamingAssetsPath, videoTitle);
         videoPlayer.url = fileSource;
+        videoPlayer.Prepare();
+        StartCoroutine(waiter());
         videoPlayer.Play();
     }
     /// <summary>
@@ -53,7 +64,10 @@ public class CinemaVideoPlayer : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        FrameCheck(); 
+        if (Application.isFocused)
+        {
+            FrameCheck();
+        }
     }
 
     /// <summary>
@@ -70,12 +84,12 @@ public class CinemaVideoPlayer : MonoBehaviour
             long playerCurrentFrame = videoPlayer.frame;
             long playerFrameCount = Convert.ToInt64(videoPlayer.frameCount);
 
-            if (!videoPlayer.isPlaying && (float)videoPlayer.frame >= (float)videoPlayer.frameCount-1 && !PlayPauseButton.videoPaused)
+            if (!videoPlayer.isPlaying && (float)videoPlayer.frame >= (float)videoPlayer.frameCount - 1 && !PlayPauseButton.videoPaused)
             {
                 ClosePanel();
             }
         }
-    }    
+    }
 
     /// <summary>
     /// stolen from PanelOpener Script  
