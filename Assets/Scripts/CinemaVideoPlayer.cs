@@ -64,7 +64,7 @@ public class CinemaVideoPlayer : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        if (Application.isFocused)
+        if (Application.isFocused && Application.isPlaying)
         {
             FrameCheck();
         }
