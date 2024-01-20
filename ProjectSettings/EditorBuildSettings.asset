@@ -5,7 +5,82 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/GameScene.unity
+    guid: a15d76019818a464da905ddbdbe1b548
+  - enabled: 0
+    path: Assets/Scenes/DefaultScene.unity
+    guid: f5e322562c4cd4844b7494f7fc4e6213
+  - enabled: 0
+    path: Assets/Scenes/PixelScene4.unity
+    guid: 9f262d2f1c5e28546851a90917f6e7bb
+  - enabled: 1
+    path: Assets/Scenes/GamesPageScene.unity
+    guid: 56819d8c38028864cb79673e059c009f
+  - enabled: 0
+    path: Assets/Scenes/PixelScene2.unity
+    guid: 1fb1b38f26e984f069f60ab84c5e63ec
+  - enabled: 0
+    path: Assets/Scenes/PixelScene3.unity
+    guid: 79901b978208b4697936096a3995e992
+  - enabled: 0
+    path: Assets/Scenes/TriviaGame1.unity
+    guid: 8face8d26f5374282bf27c5c94837bfd
+  - enabled: 1
+    path: Assets/Scenes/TriviaBeginScene.unity
+    guid: 64a6cbdfd325949bda702cfcdf2ce95a
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion1.unity
+    guid: d879533a9c7254941a8ea0f4a0e5a162
+  - enabled: 0
+    path: Assets/Scenes/TriviaGame1 2.unity
+    guid: 54b3bcd56bd3748eb92b93fbc6e96d05
+  - enabled: 0
+    path: Assets/Scenes/TriviaGame1 11.unity
+    guid: 9ef6313f096d642789bc09d19c4febd5
+  - enabled: 0
+    path: Assets/Scenes/TriviaGame2 1.unity
+    guid: 74a52b0a08d334c4199339c2599e9020
+  - enabled: 0
+    path: Assets/Scenes/TriviaGame2 2.unity
+    guid: 390c27a1de4034889be7941534d800bc
+  - enabled: 0
+    path: Assets/Scenes/TriviaGame2 3.unity
+    guid: 1c9a400324c104e0a94fbd459a135a99
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion2.unity
+    guid: 7ba9260c176db4daab4cbd714d4b566e
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion3.unity
+    guid: c4951adc4e96f4f8db7af6319f7f0a0d
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion4.unity
+    guid: 467a27a95480547739574c09a8d2575d
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion5.unity
+    guid: eeb1c281b3f3c4765b41144ffeb2a87a
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion6.unity
+    guid: 870aa4b24920b47d7acd7437370d9413
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion7.unity
+    guid: ee50f3f27d90744bf83dc279d1cc9ec8
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion8.unity
+    guid: f0d89d0e50ac84c61a441f7ca59a1600
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion9.unity
+    guid: dea9c3963c21e42acaa38b51142bd49d
+  - enabled: 1
+    path: Assets/Scenes/TriviaQuestion10.unity
+    guid: e7b7fa5326fec45de92f0b3859696582
+  - enabled: 1
+    path: Assets/Scenes/TriviaEndingScene.unity
+    guid: 559d4e1cc83714f3abf235912b4e87bd
+  - enabled: 0
+    path: Assets/Scenes/TriviaOpeningScene.unity
+    guid: 1bed2c332ad554be588513d8e3561a53
   m_configObjects: {}
